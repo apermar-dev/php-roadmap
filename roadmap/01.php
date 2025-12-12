@@ -23,6 +23,7 @@ $a = 1;
 $b = 2;
 $boolean_1 = true;
 $boolean_0 = false;
+$array = [1, 2, 3, 4];
 
 // Operadores
 print "IDENTIDAD" . "\n";
@@ -84,7 +85,7 @@ print "WHILE" . "\n";
 
 $i = 0;
 
-while ($i<10) {
+while ($i < 10) {
     print $i++;
 }
 
@@ -96,14 +97,21 @@ $i = 0;
 
 do {
     print $i++;
-} while ($i<10);
+} while ($i < 10);
 
 
 # FOR
 print "\n" . "FOR" . "\n";
 
-for ($i=0; $i < 10; $i++){
+for ($i = 0; $i < 10; $i++) {
     print $i;
+}
+
+
+# FOREACH
+print "\n" . "FOREACH" . "\n";
+foreach ($array as $value) {
+    echo "Elemento actual de \$array: $value.\n";
 }
 
 
@@ -111,9 +119,9 @@ for ($i=0; $i < 10; $i++){
 
 print "\n" . "PROGRAMA EXTRA:" . "\n";
 
-for ($i = 10; $i<=55; $i++){
+for ($i = 10; $i <= 55; $i++) {
 
-    if ($i % 2 ==0 && $i != 16 && $i % 3 != 0) {
+    if ($i % 2 == 0 && $i != 16 && $i % 3 != 0) {
         print $i . "\n";
     }
 
